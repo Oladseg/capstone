@@ -61,4 +61,4 @@ app.get('/home', async(req,res) => {
     }
 });
 
-app.listen(PORT, () => [console.log(`SERVER IS RUNNING ON PORT ${PORT}`)]);
+app.listen(PORT, () => [console.log(`SERVER CONNECTED AND RUNNING ON PORT ${PORT}`)]);
