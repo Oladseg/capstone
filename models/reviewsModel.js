@@ -21,12 +21,6 @@ const reviewSchema = new mongoose.Schema(
             type: String,
             required: true,
             trim:true,
-            // validate:{
-            //     validator:(phoneNo)=>{
-            //         const regex=/^[1-9]\d{10}$/;
-            //         return (regex.test(phoneNo));},
-            //         message:'Phone number must contain exactly 10 digits'
-            // }
         },
         location: {
             type: String,
