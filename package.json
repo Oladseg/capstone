@@ -13,9 +13,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "run": "nodemon app.js",
-    "build": "nodemon app.js",
-    "server": "nodemon app.js"
-  }
+    "start": "node app.js",
+    "run": "node app.js",
+    "build": "node app.js",
+    "server": "node app.js"
+  },
+  "engines": {
+    "node": ">=19"
+  },
+  "main": "app.js"
 }
