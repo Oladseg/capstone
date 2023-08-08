@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
   res.send("Home page");
 });
 
-app.post("/reviews", async (req, res) => {
+app.post("/review", async (req, res) => {
   try {
     const reviews = await Reviews.create({
       fullName: req.body.fullName,
@@ -49,7 +49,7 @@ app.post("/reviews", async (req, res) => {
   }
 });
 
-app.get('/home', async(req,res) => {
+app.get('/', async(req,res) => {
     try {
         const allReviews = await Reviews.find().sort({createdAt : -1})
         res.status(200).json({
